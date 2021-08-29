@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity3">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_View_Lets_Vaccine"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardBackgroundColor="#348A7B"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_Lets_Vaccine"
+            android:layout_width="330dp"
+            android:layout_height="159dp"
+            android:layout_marginTop="0dp"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            android:elevation="8.5dp"
+            app:layout_constraintTop_toTopOf="@id/card_View_Lets_Vaccine"
+            app:lottie_loop="true"
+            app:layout_constraintEnd_toEndOf="@id/card_View_Lets_Vaccine"
+            app:layout_constraintStart_toStartOf="@id/card_View_Lets_Vaccine"
+            app:lottie_rawRes="@raw/cov1" />
+
+    <TextView
+        android:id="@+id/lets_Vaccine_Text"
+        android:layout_width="279dp"
+        android:layout_height="37dp"
+        android:elevation="10dp"
+        android:text="Let's get Vaccinated !"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_Lets_Vaccine"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/free_Safe_Protected_text"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:elevation="8dp"
+        android:text="FREE, SAFE, PROTECTED"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/card_View_Lets_Vaccine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lets_Vaccine_Text"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SmallSp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_View_Lets_Vaccine">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_benefits"
+                style="@style/card_view_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.838"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.099">
+
+                <TextView
+                    android:id="@+id/benefits_text"
+                    style="@style/text_view_titles_of_cards_home_fragment"
+                    android:text="Benefits Of COVID-19 Vaccine"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="@id/card_view_benefits" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                style="@style/shapable_image_view_home_fragment"
+                android:src="@drawable/family1"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_benefits"
+                app:layout_constraintEnd_toEndOf="@id/card_view_benefits"
+                app:layout_constraintTop_toTopOf="@id/card_view_benefits" />
+
+            <LinearLayout
+                style="@style/linear_layout_home_fragment"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_benefits"
+                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView"
+                app:layout_constraintStart_toStartOf="@id/card_view_benefits"
+                app:layout_constraintTop_toTopOf="@id/card_view_benefits">
+
+                <TextView
+                    android:id="@+id/text_benefit_one"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Builds your immune system" />
+
+                <TextView
+                    android:id="@+id/tex_benefit_two"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Protect you from severe sickness and complications" />
+
+                <TextView
+                    android:id="@+id/text_benefit_three"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Reduces your rsik of hospitalization" />
+            </LinearLayout>
+
+            <!-- second card view -->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_companies"
+                style="@style/card_view_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintHorizontal_bias="0.838"
+                app:layout_constraintTop_toBottomOf="@id/card_view_benefits"
+                app:layout_constraintVertical_bias="0.099">
+
+                <TextView
+                    android:id="@+id/companies_text"
+                    style="@style/text_view_titles_of_cards_home_fragment"
+                    android:text="Companies Of COVID-19 Vaccine"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="@id/card_view_companies" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView1"
+                style="@style/shapable_image_view_home_fragment"
+                android:src="@drawable/vac1"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_companies"
+                app:layout_constraintEnd_toEndOf="@id/card_view_companies"
+                app:layout_constraintTop_toTopOf="@id/card_view_companies" />
+
+            <LinearLayout
+                style="@style/linear_layout_home_fragment"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_companies"
+                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView1"
+                app:layout_constraintStart_toStartOf="@id/card_view_companies"
+                app:layout_constraintTop_toTopOf="@id/card_view_companies">
+
+                <TextView
+                    android:id="@+id/text_companies_one"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Pfizer-BioNTech" />
+
+                <TextView
+                    android:id="@+id/tex_companies_two"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Oxford Uni-AstraZeneca" />
+
+                <TextView
+                    android:id="@+id/text_companies_three"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Gamaleye(Sputnik V)" />
+
+                <TextView
+                    android:id="@+id/text_companies_four"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Sinovac" />
+
+                <TextView
+                    android:id="@+id/text_companies_five"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Moderna" />
+
+            </LinearLayout>
+            <!-- third card view -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_facts"
+                style="@style/card_view_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintHorizontal_bias="0.838"
+                app:layout_constraintTop_toBottomOf="@id/card_view_companies"
+                app:layout_constraintVertical_bias="0.099">
+
+                <TextView
+                    android:id="@+id/facts_text"
+                    style="@style/text_view_titles_of_cards_home_fragment"
+                    android:text="The Facts of Vaccines"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="@id/card_view_facts" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView2"
+                style="@style/shapable_image_view_home_fragment"
+                android:src="@drawable/truesign2"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_facts"
+                app:layout_constraintEnd_toEndOf="@id/card_view_facts"
+                app:layout_constraintTop_toTopOf="@id/card_view_facts" />
+
+            <LinearLayout
+                style="@style/linear_layout_home_fragment"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_facts"
+                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView2"
+                app:layout_constraintStart_toStartOf="@id/card_view_facts"
+                app:layout_constraintTop_toTopOf="@id/card_view_facts">
+
+                <TextView
+                    android:id="@+id/text_facts_one"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Free" />
+
+                <TextView
+                    android:id="@+id/tex_facts_two"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Safe for pregnant and breastfeeding women" />
+
+                <TextView
+                    android:id="@+id/text_facts_three"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Previous infection doesnt qualify as protection" />
+
+                <TextView
+                    android:id="@+id/text_facts_four"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Reduces symptoms if you get COVID" />
+
+
+            </LinearLayout>
+
+            <!-- fourth card-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_side_effects"
+                style="@style/card_view_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintHorizontal_bias="0.838"
+                app:layout_constraintTop_toBottomOf="@id/card_view_facts"
+                app:layout_constraintVertical_bias="0.099">
+
+                <TextView
+                    android:id="@+id/side_effects_text"
+                    style="@style/text_view_titles_of_cards_home_fragment"
+                    android:text="COVID-19 Vaccine side effects"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="@id/card_view_side_effects" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView3"
+                style="@style/shapable_image_view_home_fragment"
+                android:src="@drawable/truesign2"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_side_effects"
+                app:layout_constraintEnd_toEndOf="@id/card_view_side_effects"
+                app:layout_constraintTop_toTopOf="@id/card_view_side_effects" />
+
+            <LinearLayout
+                style="@style/linear_layout_home_fragment"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_side_effects"
+                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView3"
+                app:layout_constraintStart_toStartOf="@id/card_view_side_effects"
+                app:layout_constraintTop_toTopOf="@id/card_view_side_effects">
+
+                <TextView
+                    android:id="@+id/text_side_effects_one"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Sore arm" />
+
+                <TextView
+                    android:id="@+id/tex_side_effects_two"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Headache" />
+
+                <TextView
+                    android:id="@+id/text_side_effects_three"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Fever or chills" />
+
+                <TextView
+                    android:id="@+id/text_side_effects_four"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Muscle aches or soreness" />
+
+                <TextView
+                    android:id="@+id/text_side_effects_fifth"
+                    style="@style/text_details_home_fragment"
+                    android:text="* Tiredness" />
+
+            </LinearLayout>
+            <!-- fifth card-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_what_todo"
+                style="@style/card_view_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintHorizontal_bias="0.838"
+                app:layout_constraintTop_toBottomOf="@id/card_view_side_effects"
+                app:layout_constraintVertical_bias="0.099">
+
+                <TextView
+                    android:id="@+id/what_todo_text"
+                    style="@style/text_view_titles_of_cards_home_fragment"
+                    android:text="COVID-19 Vaccine side effects"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="@id/card_view_side_effects" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView4"
+                style="@style/shapable_image_view_home_fragment"
+                android:src="@drawable/truesign2"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_what_todo"
+                app:layout_constraintEnd_toEndOf="@id/card_view_what_todo"
+                app:layout_constraintTop_toTopOf="@id/card_view_what_todo" />
+
+            <LinearLayout
+                style="@style/linear_layout_home_fragment"
+                app:layout_constraintBottom_toBottomOf="@id/card_view_what_todo"
+                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView4"
+                app:layout_constraintStart_toStartOf="@id/card_view_what_todo"
+                app:layout_constraintTop_toTopOf="@id/card_view_what_todo">
+
+                <TextView
+                    android:id="@+id/text_what_todo_one"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Move your arm, apply an ice pack" />
+
+                <TextView
+                    android:id="@+id/tex_what_todo_two"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Rest when needed" />
+
+                <TextView
+                    android:id="@+id/text_what_todo_three"
+                    style="@style/text_details_home_fragment"
+
+                    android:text="* Take it easy , take pain reliever" />
+
+                <TextView
+                    android:id="@+id/text_what_todo_four"
+                    style="@style/text_details_home_fragment"
+                    android:text="* if fever is so high call doctor for advice" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

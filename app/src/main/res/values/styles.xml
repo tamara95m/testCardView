@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="circle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+
+
+    <style name="card_view_home_fragment">
+
+        <item name="cardBackgroundColor">#F2F3F4</item>
+        <item name="cardCornerRadius">30dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+
+    </style>
+
+
+    <style name="text_view_titles_of_cards_home_fragment">
+        <item name="android:layout_width">345dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:background">#348A7B</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+
+    </style>
+    <style name="shapable_image_view_home_fragment">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="shapeAppearanceOverlay">@style/circle</item>
+    </style>
+
+    <style name="linear_layout_home_fragment">
+        <item name="android:layout_width">230dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">25dp</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="text_details_home_fragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingBottom">3dp</item>
+
+    </style>
+
+
+
+</resources>
